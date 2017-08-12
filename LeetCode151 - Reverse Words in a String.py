@@ -30,3 +30,18 @@ rs = Solution().reverseList(s_1)
 while rs != None:
 	print(rs.val)
 	rs = rs.next
+
+
+
+"""
+class Solution(object):
+    def reverseWords(self, s):
+        return ' '.join(reversed(s.split()))
+"""
+
+""" 
+s = "the sky is blue"
+s.split() ->  ['the','sky','is','blue']
+reverse() ->  ['blue','is','sky','the']
+' '.join() -> "blue is sky the"
+"""
