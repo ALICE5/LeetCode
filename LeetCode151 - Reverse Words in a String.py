@@ -17,3 +17,16 @@ class Solution:
 		return prev
 
 
+s_1 = ListNode('the')
+s_2 = ListNode('sky')
+s_3 = ListNode('is')
+s_4 = ListNode('blue')
+
+s_1.next = s_2
+s_2.next = s_3
+s_3.next = s_4
+
+rs = Solution().reverseList(s_1)
+while rs != None:
+	print(rs.val)
+	rs = rs.next
